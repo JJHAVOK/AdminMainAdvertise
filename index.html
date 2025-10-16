@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Digital Engineering</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="admin.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-wrapper">
+        
+        <aside class="sidebar">
+            <div class="logo-section">
+                <h2>Digital Engine</h2>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <i class="fas fa-tachometer-alt"></i> <span>Dashboard</span>
+                </a>
+                
+                <div class="nav-section-title">FRONTEND TRACKING</div>
+                <a href="#" class="nav-item has-submenu">
+                    <i class="fas fa-envelope-open-text"></i> <span>Contact Leads</span> <i class="fas fa-chevron-down submenu-toggle"></i>
+                </a>
+                <div class="submenu">
+                    <a href="#" class="submenu-item">New Submissions</a>
+                    <a href="#" class="submenu-item">Email Listing</a>
+                </div>
+                
+                <div class="nav-section-title">CORE SYSTEMS</div>
+                
+                <a href="#" class="nav-item has-submenu">
+                    <i class="fas fa-briefcase"></i> <span>Projects</span> <i class="fas fa-chevron-down submenu-toggle"></i>
+                </a>
+                <div class="submenu">
+                    <a href="#" class="submenu-item">Kanban Board</a>
+                    <a href="#" class="submenu-item">Project Tables</a>
+                    <a href="#" class="submenu-item">Documents</a>
+                </div>
+
+                <a href="#" class="nav-item has-submenu">
+                    <i class="fas fa-user-tie"></i> <span>CRM (Customers)</span> <i class="fas fa-chevron-down submenu-toggle"></i>
+                </a>
+                <div class="submenu">
+                    <a href="#" class="submenu-item">Customer List</a>
+                    <a href="#" class="submenu-item">Sales Charts</a>
+                </div>
+                
+                <a href="#" class="nav-item has-submenu">
+                    <i class="fas fa-users"></i> <span>HRM (Employees)</span> <i class="fas fa-chevron-down submenu-toggle"></i>
+                </a>
+                <div class="submenu">
+                    <a href="#" class="submenu-item">Employee Directory</a>
+                    <a href="#" class="submenu-item">Timesheets</a>
+                </div>
+                
+                <div class="nav-section-title">UTILITIES</div>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-chart-bar"></i> <span>Charts & Reports</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fas fa-cog"></i> <span>Settings</span>
+                </a>
+            </nav>
+        </aside>
+        <div class="main-content">
+            <header class="top-bar">
+                <h1>Dashboard Overview</h1>
+                <div class="user-profile">
+                    <i class="fas fa-user-circle"></i> <span>Admin User</span>
+                    <a href="#"><i class="fas fa-sign-out-alt"></i></a>
+                </div>
+            </header>
+
+            <main class="dashboard-body">
+                <section class="stat-cards">
+                    <div class="stat-card">
+                        <h3>New Leads</h3>
+                        <p class="stat-value">42</p>
+                        <i class="fas fa-inbox"></i>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Active Projects</h3>
+                        <p class="stat-value">12</p>
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Total Customers</h3>
+                        <p class="stat-value">89</p>
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Employees</h3>
+                        <p class="stat-value">24</p>
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                </section>
+
+                <section class="main-charts-area">
+                    <div class="chart-container">
+                        <h2>Recent Contact Submissions (Last 7 Days)</h2>
+                        <div style="height: 300px; background: #2c3e50; border-radius: 8px;"></div>
+                    </div>
+                    <div class="table-container">
+                        <h2>Pending Follow-ups</h2>
+                        <table class="data-table">
+                            <thead>
+                                <tr><th>Name</th><th>Company</th><th>Service</th><th>Date</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Jane Doe</td><td>Innovate Corp</td><td>Fullstack</td><td>Oct 14</td></tr>
+                                <tr><td>John Smith</td><td>Global Tech</td><td>Consulting</td><td>Oct 13</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </main>
+        </div>
+        </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
