@@ -248,3 +248,107 @@ body {
 .data-table tbody tr:last-child td {
     border-bottom: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- LOGIN PAGE STYLES --- */
+
+
+
+
+
+
+
+
+
+
+
+
+.login-page-body {
+    background-color: var(--admin-sidebar-bg); /* Use the darkest color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+}
+
+.login-box {
+    background-color: var(--admin-card-bg);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: var(--admin-shadow);
+    text-align: center;
+}
+
+.login-box h2 {
+    color: var(--admin-accent-blue);
+    margin-bottom: 10px;
+}
+
+.login-box p {
+    color: var(--admin-text-muted);
+    margin-bottom: 30px;
+}
+
+.login-form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.login-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--admin-text-light);
+    font-size: 0.9em;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #4B5563;
+    border-radius: 6px;
+    background-color: #374151;
+    color: var(--admin-text-light);
+    font-size: 1em;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--admin-accent-blue);
+    color: var(--admin-text-light);
+    font-size: 1.1em;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.login-btn:hover {
+    background-color: #2563EB;
+}
+
+.error-message {
+    color: #F87171; /* Red color for errors */
+    margin-top: 15px;
+    font-weight: 600;
+}
